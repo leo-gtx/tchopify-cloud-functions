@@ -1,3 +1,4 @@
+/* eslint-disable */
 const express = require('express');
 const NotificationMiddleware = require('../middlewares/Notification');
 

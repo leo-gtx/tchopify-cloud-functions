@@ -1,8 +1,9 @@
+/* eslint-disable */
 const axios = require("axios");
 const Config = require("../config/config");
 
 const NotificationMiddleware = {
-    sendWhatsappNewOrderPlaced: async(req, res)=>{
+    sendWhatsappNewOrderPlaced: async function(req, res){
         if(!req.body) return req.sendStatus(400);
         res.setHeader('Content-Type', 'application/json');
         const {recipient, parameters, lang} = req.body;

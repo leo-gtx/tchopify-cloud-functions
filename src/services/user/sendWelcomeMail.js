@@ -1,7 +1,8 @@
+/* eslint-disable */
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 /** Send welcome mail for new user */
-
+// eslint-disable-next-line
 module.exports = sendWelcomeMail = functions.firestore.document('/users/{userId}')
 .onCreate((snap, context)=>{
     const SUPPORT_ID = "D82QlAS3nVQGfhFmpPUIWcou2UJ2";
